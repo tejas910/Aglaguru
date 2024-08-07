@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./Images1/ICON.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Aglaguru.com</title>
+
+    <style>
+         *{
+            scroll-behavior: smooth;
+        }
+         header .title{
+            position: absolute;
+            max-width: 129px;
+            width: 100%;
+            height: 0px;
+            left: 100px;
+            top: 68px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 141.02%;
+            /* identical to box height, or 37px */
+
+            display: flex;
+            color: #368B18;
+        }
+
+        header .p{
+            position: absolute;
+            width: 194px;
+            height: 0px;
+            left: 900px;
+            top: 102px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 141.02%; 
+            color: #999999;
+            text-decoration: none;
+
+        }
+        header .p1{
+            text-decoration: none;
+
+            position: absolute;
+            width: 194px;
+            height: 20px;
+            left: 1100px;
+            top: 102px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 141.02%;
+            color: #999999;
+
+        }
+        .inner{
+            box-sizing: border-box; 
+            position: absolute;
+            width: 199px;
+            height: 50px;
+            left: 1081px;
+            top: 87px;
+            color: #FFF;
+            background: #368B18;
+            border: 2px solid #368B18;
+            border-radius: 7px;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner .btn{
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 141.02%;
+        }
+        .content-aglaguru{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 13%;
+            width: 100%;
+        }
+        .content-aglaguru .content-text{
+            
+            max-width: 900px;
+            width: 100%;
+            font-family: 'Poppins';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 141.02%;
+            text-align: center;
+            color: #368B18;
+        }
+        
+        .btnclass{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .btnclass .btn{
+            background-color: #368B18;
+            max-width: 400px;
+            height: 90px;            
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 141.02%;
+            color: #FFFFFF;
+            padding: 0 5%;
+            border-radius: 11px ;
+            width: 100%;
+        }
+
+        h1{
+            margin: 0 0 10px;
+            padding: 0;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 141.02%;
+            color: #474747;
+        }
+     
+        .whyuseaglaguru{
+            margin-top: 30%;
+        }
+        .whyuseaglaguru .whyuseaglaguru-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .whyuseaglaguru .whyuseaglaguru-text .whyuseaglaguru-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1000px;
+            height: 128px;
+            border: 2px solid #FE8B21;
+            border-radius: 8px;
+
+        }
+        .whyuseaglaguru .whyuseaglaguru-text .whyuseaglaguru-content h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            color: #FE8B21;
+        }
+        .whyuseaglaguru .discoverability{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 180px;
+            margin-top: 15%;
+        }
+        .whyuseaglaguru .discoverability .discoverability-text{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 141.02%;
+            color: #368B18;
+            margin-top: 5%;
+        }
+        .whyuseaglaguru .discoverability .discoverability-content{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 141.02%;
+            color: #8F8F8F;
+            margin-top: -0.5%;
+            width: 80%;
+
+        }
+        .whyuseaglaguru .payment{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 180px;
+            margin-top: 10%;
+        }
+        .whyuseaglaguru .payment .payment-text{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 141.02%;
+            color: #368B18;
+            margin-top: 5%;
+        }
+
+        .whyuseaglaguru .payment .payment-content{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 141.02%;
+            color: #8F8F8F;
+            margin-top: -0.5%;
+            width: 80%;
+        }
+
+        .whyuseaglaguru .trial-classes{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 180px;
+            margin-top: 14%;
+        }
+        
+        .whyuseaglaguru .trial-text{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 141.02%;
+            color: #368B18;
+            margin-top: 5%;
+        }
+
+        .whyuseaglaguru .trial-content{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 141.02%;
+            color: #8F8F8F;
+            margin-top: -0.5%;
+            width: 80%;
+        }
+        .whywecreate{
+            margin-top: 18%;
+        }
+        .whywecreate .whywecreate-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .whywecreate .whywecreate-text .whywecreate-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1000px;
+            height: 128px;
+            border-radius: 8px;
+            border: 2px solid #FE8B21;
+
+        }
+        .whywecreate .whywecreate-text .whywecreate-content h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            color: #FE8B21;
+        }
+        .whywecreate .main-container{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin-top: 5%;
+        }
+        .whywecreate .main-container .sub-container{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 190%;
+            color: #261054;
+            width: 70%;
+
+        }
+        .whywecreate .aglaguru-problem{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin-top: 5%;
+        }
+        .whywecreate .aglaguru-problem .aglaguru-subproblem{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 220%;
+            color: #8F8F8F;
+            width: 70%;
+        }
+
+        .footer{
+            background: #368B18;
+            width: 100%;
+            height: 116px;
+            margin-top: 20%;
+        }
+        .footer .footer-main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .footer .footer-main h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 141.02%;
+            color: #FFFFFF;
+
+        }
+
+        @media (max-width: 1281px) {
+            
+        header .p{
+            position: absolute;
+            width: 194px;
+            height: 0px;
+            left: 510px;
+            top: 102px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 141.02%;
+            /* identical to box height, or 20px */
+            color: #999999;
+            text-decoration: none;
+
+        }
+        header .p1{
+            text-decoration: none;
+
+            position: absolute;
+            width: 194px;
+            height: 20px;
+            left: 720px;
+            top: 102px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 141.02%;
+            /* identical to box height, or 20px */
+            color: #999999;
+
+        }
+        .inner{
+            box-sizing: border-box; 
+            position: absolute;
+            width: 199px;
+            height: 50px;
+            left: 1001px;
+            top: 87px;
+            color: #FFF;
+            background: #368B18;
+            border: 2px solid #368B18;
+            border-radius: 7px;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            position: absolute;
+            top: 68%;
+            left: 50%;
+            width: 720px;
+            transform: translate(-50%,-50%);
+        }
+        input{
+            position: relative;
+            display: inline-block;
+            font-size: 20px;
+            box-sizing: border-box;
+
+        }
+        input[type="email"]{
+            background: #fff;
+            width: 484px;
+            height: 65px;
+            border: none;
+            outline: none;
+            padding: 0 25px;
+            border-radius: 8px 0 0 8px;
+            border: 2px solid #368B18;
+
+        }
+        
+        input[type="email"]::placeholder{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 141.02%;
+            color: #474747;
+
+        }
+
+        input[type="submit"]{
+            position: relative;
+            border-radius: 0 8px 8px 0;
+            height: 65px;
+            left: -5px;
+            top:-1px;
+            width: 226px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background:  #368B18;
+            color: white;                    
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+        }
+        .whyuseaglaguru{
+            margin-top: 30%;
+        }
+        }
+
+        @media (max-width: 991px) {
+            header .title{
+                left: 50px;
+            }
+            header .p{
+                display: none;
+        }
+        header .p1{
+            display: none;
+        }
+        .inner{
+            display: none;
+        }
+        .inner .btn{
+            display: none;
+        }
+        .content-aglaguru .content-text{
+            font-size: 50px;
+            margin-top: 25%;
+        }
+        
+        .box{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            width: 510px;
+            transform: translate(-50%,-50%);
+        }
+        input{
+            position: relative;
+            display: inline-block;
+            font-size: 16px;
+            box-sizing: border-box;
+
+        }
+        input[type="email"]{
+            width: 300px;
+            height: 65px;
+ 
+
+        }
+        
+        input[type="email"]::placeholder{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            color: #474747;
+
+        }
+
+        input[type="submit"]{
+            height: 65px;
+            left: -5px;
+            width: 200px;
+
+        }
+        .whyuseaglaguru{
+            margin-top: 50%;
+            padding: 0 5%;
+        }
+        .whyuseaglaguru .whyuseaglaguru-text .whyuseaglaguru-content h2{
+            font-size: 44px;
+        }
+        .whyuseaglaguru .discoverability{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .whyuseaglaguru .discoverability .discoverability-text{
+            font-size: 25px;
+        }
+        .whyuseaglaguru .discoverability .discoverability-content{
+            font-size: 16px;
+            width: 100%;
+            
+        }
+        .whyuseaglaguru .discoverability .discoverability-image{
+            width: 20%;
+
+        }
+        .whyuseaglaguru .payment{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .whyuseaglaguru .payment .payment-text{
+            font-size: 25px;
+
+        }
+        .whyuseaglaguru .payment .payment-content{
+            font-size: 16px;
+            width: 100%;
+        }
+        .whyuseaglaguru .payment .payment-image{
+            width: 20%;
+        }
+        .whyuseaglaguru .trial-classes{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .whyuseaglaguru .trial-classes .trial-text{
+            font-size: 25px;
+        }
+        .whyuseaglaguru .trial-classes .trial-content{
+            font-size: 16px;
+            width: 100%;
+        }
+        .whyuseaglaguru .trial-classes .trial-image{
+            width: 20%;
+        }
+        .whywecreate{
+            padding: 0 5%;
+        }
+        .whywecreate .whywecreate-text .whywecreate-content h2{
+            font-size: 30px;
+        }
+        .whywecreate .main-container .sub-container {
+            font-size: 20px;
+            width: 100%;
+            padding: 0 30px;
+            margin-top: 10%;
+        }
+        .whywecreate .aglaguru-problem .aglaguru-subproblem{
+            font-size: 16px;
+            width: 100%;
+            padding: 0 30px;
+        }
+        .footer{
+            height: 60px;
+        }
+        .footer .footer-main h2{
+            font-size: 20px;
+        }
+        }
+
+        @media (max-width: 768px) {
+            .box{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            width: 510px;
+            transform: translate(-50%,-50%);
+        }
+        input{
+            position: relative;
+            display: inline-block;
+            font-size: 20px;
+            box-sizing: border-box;
+
+        }
+        input[type="email"]{
+            width: 300px;
+            height: 50px;
+ 
+
+        }
+        
+        input[type="email"]::placeholder{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            color: #474747;
+
+        }
+
+        input[type="submit"]{
+            height: 50px;
+            left: -5px;
+            top: -3px;
+            width: 200px;
+            font-size: 16px;
+
+        }
+        }
+
+        @media (max-width: 600px) {
+            header .title{
+                font-size: 20px;
+            }
+
+            .content-aglaguru .content-text{
+            font-size: 30px;
+            margin-top: 55%;
+        }
+        
+        .box{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            width: 410px;
+            transform: translate(-50%,-50%);
+        }
+        input{
+            position: relative;
+            display: inline-block;
+            font-size: 16px;
+            box-sizing: border-box;
+
+        }
+        input[type="email"]{
+            width: 250px;
+            height: 50px;
+ 
+
+        }
+        
+        input[type="email"]::placeholder{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8px;
+            color: #474747;
+
+        }
+
+        input[type="submit"]{
+            height: 50px;
+            left: -5px;
+            top: -2px;
+            width: 150px;
+            font-size: 11px;
+
+        }
+        .whyuseaglaguru{
+            margin-top: 70%;
+            padding: 0 5%;
+        }
+        .whyuseaglaguru .whyuseaglaguru-text .whyuseaglaguru-content{
+            height: 100px;
+        }
+
+    
+        .whyuseaglaguru .whyuseaglaguru-text .whyuseaglaguru-content h2{
+            font-size: 20px;
+        }
+        .whyuseaglaguru .discoverability{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .whyuseaglaguru .discoverability .discoverability-text{
+            font-size: 16px;
+        }
+        .whyuseaglaguru .discoverability .discoverability-content{
+            font-size: 14px;
+            width: 100%;
+            
+        }
+        .whyuseaglaguru .discoverability .discoverability-image{
+            width: 30%;
+
+        }
+        .whyuseaglaguru .payment{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .whyuseaglaguru .payment .payment-text{
+            font-size: 16px;
+
+        }
+        .whyuseaglaguru .payment .payment-content{
+            font-size: 14px;
+            width: 100%;
+        }
+        .whyuseaglaguru .payment .payment-image{
+            width: 30%;
+        }
+        .whyuseaglaguru .trial-classes{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .whyuseaglaguru .trial-classes .trial-text{
+            font-size: 16px;
+        }
+        .whyuseaglaguru .trial-classes .trial-content{
+            font-size: 14px;
+            width: 100%;
+        }
+        .whyuseaglaguru .trial-classes .trial-image{
+            width: 30%;
+        }
+        .whywecreate{
+            padding: 0 5%;
+            margin-top: 50%;
+        }
+        .whywecreate .whywecreate-text .whywecreate-content{
+            height: 100px;
+        }
+        .whywecreate .whywecreate-text .whywecreate-content h2{
+            font-size: 20px;
+        }
+        .whywecreate .main-container .sub-container {
+            font-size: 20px;
+            width: 100%;
+            padding: 0 30px;
+            margin-top: 10%;
+        }
+        .whywecreate .aglaguru-problem .aglaguru-subproblem{
+            font-size: 14px;
+            width: 100%;
+            padding: 0 30px;
+        }
+        .footer{
+            height: 60px;
+        }
+        .footer .footer-main h2{
+            font-size: 16px;
+        }
+        }
+
+        @media (max-width: 450px) {
+            header .title{
+                font-size: 20px;
+            }
+
+            .content-aglaguru .content-text{
+            font-size: 30px;
+            margin-top: 55%;
+            text-align: left;
+            margin-left: 23px;
+            max-width: 250px;
+            width: 100%;
+        }
+
+        .btnclass .btn{
+            background-color: #368B18;
+            max-width: 200px;
+            height: 50px;            
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 141.02%;
+            color: #FFFFFF;
+            padding: 0 5%;
+            border-radius: 11px ;
+            width: 100%;
+        }
+        .whyuseaglaguru{
+            margin-top: 70%;
+            padding: 0 2%;
+        }
+        .whyuseaglaguru .whyuseaglaguru-text .whyuseaglaguru-content{
+            height: 100px;
+            border: none;
+            border-top: 1px solid #FE8B21;
+            border-bottom: 1px solid #FE8B21;
+            border-radius: 0;
+            width: 100%;
+        }
+
+    
+        .whyuseaglaguru .whyuseaglaguru-text .whyuseaglaguru-content h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 141.02%;
+            color: #FE8B21;
+
+        }
+        .whyuseaglaguru .discoverability{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .whyuseaglaguru .discoverability .discoverability-text{
+            font-size: 20px;
+        }
+        .whyuseaglaguru .discoverability .discoverability-content{
+            font-size: 10px;
+            width: 90%;
+            
+        }
+        .whyuseaglaguru .discoverability .discoverability-image{
+            width: 30%;
+            margin-top: 20%;
+        }
+        .whyuseaglaguru .payment{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .whyuseaglaguru .payment .payment-text{
+            font-size: 20px;
+
+        }
+        .whyuseaglaguru .payment .payment-content{
+            font-size: 10px;
+            width: 90%;
+        }
+        .whyuseaglaguru .payment .payment-image{
+            width: 30%;
+            margin-top: 5%;
+        }
+
+        .whyuseaglaguru .trial-classes{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .whyuseaglaguru .trial-classes .trial-text{
+            font-size: 20px;
+        }
+        .whyuseaglaguru .trial-classes .trial-content{
+            font-size: 10px;
+            width: 90%;
+        }
+        .whyuseaglaguru .trial-classes .trial-image{
+            width: 30%;
+            margin-top: 5%;
+        }
+        .whywecreate{
+            padding: 0 5%;
+            
+        }
+        .whywecreate .whywecreate-text .whywecreate-content{
+            height: 100px;
+            border: none;
+            border-top: 1px solid #FE8B21;
+            border-bottom: 1px solid #FE8B21;
+            border-radius: 0;
+            width: 100%;
+        }
+        .whywecreate .whywecreate-text .whywecreate-content h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 141.02%;
+            color: #FE8B21;
+            width: 100%;
+
+        }
+        .whywecreate .main-container .sub-container {
+            font-size: 20px;
+            width: 100%;
+            padding: 0 30px;
+            margin-top: 10%;
+
+        }
+        .whywecreate .aglaguru-problem .aglaguru-subproblem{
+            font-size: 14px;
+            width: 100%;
+            padding: 0 30px;
+        }
+        .footer{
+            height: 60px;
+        }
+        .footer .footer-main h2{
+            font-size: 16px;
+        }
+        }
+    </style>
+
+</head>
+<body>
+    <header class="navbar">
+        <h2 class="title">AglaGuru</h2>
+            <a href="#whyuse" class="p">Why use aglaguru?</a>
+            <a href="#whywecreate" class="p1">Why we created AglaGuru?</a>
+    </header>
+
+    <div class="content-aglaguru">
+        <p class="content-text">
+            Find yourself the <span style="color:#FE8B21;">right</span>
+            <br> teacher without any <span style="color: #FE8B21;">hassle</span>
+        </p><br>
+    </div>  
+    <div class="btnclass">
+        <button class="btn">Join waiting list</button>
+    </div>
+
+
+
+
+    <div class="whyuseaglaguru">
+        <div class="whyuseaglaguru-text">
+            <div class="whyuseaglaguru-content"><h2>Why use Aglaguru</h2></div>
+        </div>
+        <div class="discoverability">  
+            <img class="discoverability-image" src="./Images1/descoverability.png">
+            <h2 class="discoverability-text">DISCOVERABILITY</h2>
+            <p class="discoverability-content"><b style="color: #404040;">Finding a teacher is not tough but finding the right one  for you is</b>, AglaGuru is here to help you find the best teachers in your city and around the country </p>
+        </div>
+        <div class="payment">  
+            <img class="payment-image" src="./Images1/paymentSecurity.png">
+            <h2 class="payment-text">PAYMENT SECURITY</h2>
+            <p class="payment-content">AglaGuru has come with an <b style="color: #404040;">innovative payment system</b> where when you buy learning hours from the app,<b style="color: #404040;"> you can claim a refund on the remaining classes in case you are not satisfied </b> with the teacher or any other dissatisfactory circumstances</p>
+        </div>
+        <div class="trial-classes">  
+            <img class="trial-image" src="./Images1/freeclasses.png">
+            <h2 class="trial-text">TRIAL CLASSES</h2>
+            <p class="trial-content">Aglaguru will provide you with <b style="color: #404040;">free trial classes</b> which will enable to you to understand if any particular <b style="color: #404040;">teacher is right for you before finalizing</b> your tuition sessions with that teacher </p>
+        </div>
+    </div>
+
+
+    <div class="whywecreate">
+        <div class="whywecreate-text">
+            <div class="whywecreate-content"><h2>Why we created Aglaguru?</h2></div>
+        </div>
+        <div class="main-container">
+            <div class="sub-container">
+                <p>“We believe every hour spent with the teacher is an <b style="color: #368B18;">INVESTMENT</b> made towards achieving better results”</p>
+            </div>
+        </div>
+        <div class="aglaguru-problem">
+            <div class="aglaguru-subproblem">
+                <p>One of the major problems faced by students is finding an appropriate teacher for themselves and it was the same in our case too, we would spend days in finding a teacher and we only had two option either through somebodies reference or through newspapers which was not only a cumbersome process but also very inefficient, because we never had an opportunity to take trial classes with the teacher before starting our session so we never knew if we would be comfortable with the teacher’s teaching style and mostly ended up with the wrong teacher which wasted our valueble time.
+
+                 <br><br>   So. AglaGuru is here to eliminate these inefficiencies that currently exist and improve the overall tuition experience for both teachers & students</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+           <div class="footer-main"><h2>copyright © 2022 Teachnext Pvt Ltd.</h2></div>
+        </div>
+    </div>
+
+</body>
+</html>
